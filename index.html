@@ -1,31 +1,99 @@
 <!DOCTYPE html>
+
 <html lang="vi">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thần Số Học Pro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thần Số Học PRO</title>
+
+```
 <link rel="stylesheet" href="css/style.css">
+
+<script src="js/numerology-core.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pdf.js"></script>
+```
+
 </head>
+
 <body>
 
 <div class="container">
+
+```
+<header>
+
     <h1>THẦN SỐ HỌC PYTHAGORAS PRO</h1>
 
+    <p>Phân tích 30+ chỉ số thần số học chuyên nghiệp</p>
+
+</header>
+
+<section class="form-section">
+
+    <h2>Nhập thông tin khách hàng</h2>
+
     <div class="form">
-        <input type="text" id="name" placeholder="Họ tên">
-        <input type="date" id="dob">
-        <button onclick="analyze()">Phân tích</button>
-        <button onclick="saveProfile()">Lưu hồ sơ</button>
-        <button onclick="exportPDF()">Xuất PDF</button>
+
+        <input type="text" id="fullName" placeholder="Họ tên đầy đủ">
+
+        <input type="date" id="birthDate">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Số điện thoại">
+
+        <textarea id="note" placeholder="Ghi chú khách hàng"></textarea>
+
     </div>
 
-    <div id="result"></div>
+    <div class="buttons">
 
-    <h2>Danh sách khách hàng</h2>
-    <ul id="profiles"></ul>
+        <button onclick="analyze()">Phân tích</button>
+
+        <button onclick="viewReport()">Xem báo cáo</button>
+
+        <button onclick="saveCustomer()">Lưu khách hàng</button>
+
+        <button onclick="exportPDF()">Xuất PDF</button>
+
+        <button onclick="resetForm()">Xóa</button>
+
+    </div>
+
+</section>
+
+<section class="result-section">
+
+    <h2>Kết quả nhanh</h2>
+
+    <div id="resultGrid" class="grid">
+
+    </div>
+
+</section>
+
+<section class="chart-section">
+
+    <h2>Biểu đồ ngày sinh 3x3</h2>
+
+    <div id="chart3x3" class="chart"></div>
+
+</section>
+
+<section class="pinnacle-section">
+
+    <h2>Đỉnh cao & Thử thách</h2>
+
+    <div id="pinnacle"></div>
+
+</section>
+```
+
 </div>
 
-<script src="js/app.js"></script>
-<script src="js/pdf.js"></script>
 </body>
 </html>
