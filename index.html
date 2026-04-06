@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thần Số Học Pro</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>THẦN SỐ HỌC PYTHAGORAS PRO</h1>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Họ tên">
+        <input type="date" id="dob">
+        <button onclick="analyze()">Phân tích</button>
+        <button onclick="saveProfile()">Lưu hồ sơ</button>
+        <button onclick="exportPDF()">Xuất PDF</button>
+    </div>
+
+    <div id="result"></div>
+
+    <h2>Danh sách khách hàng</h2>
+    <ul id="profiles"></ul>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/pdf.js"></script>
+</body>
+</html>
